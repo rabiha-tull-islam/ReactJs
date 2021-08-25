@@ -13,8 +13,6 @@ import items from './data.js';
                        <h4 className= 'text-light text-center'>Gallery Images</h4> 
                      </div>
             </div>
-         
-          
            <div className='row d-flex justify-content-center' >
                   {items.map((item,i)=><div className='col-lg-2 col-md-4 col-sm-5 pt-3 mt-2  mb-5 d-flex justify-content-center' >
                         <div key={i} style={style}>
