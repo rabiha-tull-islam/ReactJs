@@ -8,10 +8,8 @@ import './style.css';
 const Increment=()=>{
     const [number, setnumber] = useState(0);
     const [flag, setflag] = useState(true);
-    // const ModeChange=()=>{
-          
-    
-    // }
+    const [color,setcolor]=useState(true);
+    // const ThemeChange=()=>(color? 'light_calculator': 'Dark_calculator')
     const changeFlag=()=>{
          setflag(!flag);
       
@@ -53,7 +51,7 @@ const Increment=()=>{
     
     return(
         <div className="container" >
-        <div className="calculator">
+        <div className="light_calculator">
             <div  className="show_screen"> 
                 <Show number={number}/>
             </div>
@@ -66,6 +64,9 @@ const Increment=()=>{
                  </div>
                  <div>
                      <button className="reset" onClick={reset}>reset</button>
+                 </div>
+                 <div>
+                     <button className="theme" >Theme</button>
                  </div>
              </div>
              </div>

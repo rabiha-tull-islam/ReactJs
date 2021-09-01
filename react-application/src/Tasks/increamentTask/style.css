@@ -4,7 +4,7 @@
   align-items: center;
   text-align: center;
 }
-.calculator {
+.light_calculator {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,6 +15,19 @@
   width: 30vw;
   height: 70vh;
   box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.17),
+    -6px -6px 10px -1px rgba(116, 81, 81, 0.493);
+}
+.Dark_calculator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(39, 39, 35, 0.726);
+  margin-top: 30px;
+  text-align: center;
+  border: 1px solid rgb(36, 19, 19);
+  width: 30vw;
+  height: 70vh;
+  box-shadow: 6px 6px 10px -1px rgba(105, 14, 14, 0.17),
     -6px -6px 10px -1px rgba(116, 81, 81, 0.493);
 }
 .show_screen {
@@ -98,6 +111,18 @@
   box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.17),
     -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
 }
+.theme {
+  background-color: rgb(29, 144, 144);
+  border: none;
+  width: 80px;
+  color: aliceblue;
+  border-radius: 10%;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.17),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+.theme:hover {
+  background-color: rgba(216, 214, 124, 0.726);
+}
 .reset:hover {
   background-color: rgba(216, 214, 124, 0.726);
 }
@@ -105,6 +130,6 @@
   /* border: 1px solid black; */
   display: flex;
   justify-content: space-between;
-  width: 22vw;
-  margin-bottom: 6px;
+  width: 27vw;
+  margin-bottom: 23px;
 }
