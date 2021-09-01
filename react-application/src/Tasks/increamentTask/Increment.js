@@ -9,7 +9,8 @@ const Increment=()=>{
     const [number, setnumber] = useState(0);
     const [flag, setflag] = useState(true);
     const [color,setcolor]=useState(true);
-    // const ThemeChange=()=>(color? 'light_calculator': 'Dark_calculator')
+    const ThemeChange=(color? "Light_calculator ":"Dark_calculator")
+    const ThemeChange1=(color? "show_screen":"show_screenDark")
     const changeFlag=()=>{
          setflag(!flag);
       
@@ -51,23 +52,24 @@ const Increment=()=>{
     
     return(
         <div className="container" >
-        <div className="light_calculator">
-            <div  className="show_screen"> 
-                <Show number={number}/>
+        <div className={ThemeChange}>
+            <div  className={ThemeChange1}> 
+                <Show number={number} />
             </div>
             <div  className='btns'>
                  <div>
                      <button className="delete" onClick={delet}>Delete</button>
                  </div>
                  <div>
-                     <button className="lock" onClick={()=>changeFlag(!flag)}>Lock</button>
+                     <button className="lock" onClick={()=>setflag(!flag)}>Lock</button>
                  </div>
                  <div>
-                     <button className="reset" onClick={reset}>reset</button>
+                     <button className="reset" onClick={reset}>Reset</button>
                  </div>
                  <div>
-                     <button className="theme" >Theme</button>
+                     <button className="theme" onClick={flag?()=>setcolor(!color):''} >Theme</button>
                  </div>
+                 
              </div>
              </div>
              
