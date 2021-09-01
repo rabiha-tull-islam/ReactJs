@@ -1,11 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
-import Card from './Tasks/CardAssingnment-4'
+import React from 'react';
+import Increment from './Tasks/increamentTask/Increment'
+
 
 
 function App() {
   return (
-    <Card/>
+    <div>
+       <Increment />
+    </div>
+   
   );
 }
 
