@@ -27,8 +27,6 @@ const style={ "width": "16rem",
 "boxShadow":"2px 2px 5px  grey",
 "borderRadius":"10px" 
 
-
-}
 const style1={ "width": "16rem", 
 "height": "10rem",
 
