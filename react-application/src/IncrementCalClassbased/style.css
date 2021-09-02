@@ -1,0 +1,149 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.Light_calculator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(12, 237, 222, 0.92);
+  margin-top: 30px;
+  text-align: center;
+  border: 1px solid grey;
+  width: 30vw;
+  height: 70vh;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.17),
+    -6px -6px 10px -1px rgba(116, 81, 81, 0.493);
+}
+.Dark_calculator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(39, 39, 35, 0.726);
+  margin-top: 30px;
+  text-align: center;
+  border: 1px solid rgb(36, 19, 19);
+  width: 30vw;
+  height: 70vh;
+  box-shadow: 6px 6px 10px -1px rgba(105, 14, 14, 0.17),
+    -6px -6px 10px -1px rgba(116, 81, 81, 0.493);
+}
+.show_screen {
+  position: absolute;
+  background-color: rgb(29, 144, 144);
+  border: 1px solid black;
+  top: 70px;
+  padding-top: 20px;
+  width: 25vw;
+  height: 14vh;
+  border-radius: 1.7vh;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 300;
+  color: azure;
+}
+.show_screenDark {
+  position: absolute;
+  background-color: rgb(222, 236, 236);
+  border: 1px solid black;
+  top: 70px;
+  padding-top: 20px;
+  width: 25vw;
+  height: 14vh;
+  border-radius: 1.7vh;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 300;
+  color: rgb(48, 59, 59);
+}
+
+.outcircle {
+  position: relative;
+  top: 110px;
+  right: 260px;
+  /* bottom: 150px;
+    left: 150px; */
+  width: 120px;
+  height: 120px;
+  /* border: 1px solid black; */
+  padding: 15px;
+  border-radius: 50%;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.17),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+.incircle {
+  width: 90px;
+  height: 90px;
+  /* border: 1px solid black; */
+  border-radius: 50%;
+  box-shadow: inset 6px 6px 10px -1px rgba(0, 0, 0, 0.17),
+    inset -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.outcircle:hover {
+  background-color: rgb(29, 144, 144);
+}
+.increment_btn {
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+.lock {
+  background-color: rgb(29, 144, 144);
+  border: none;
+  width: 80px;
+  color: aliceblue;
+  border-radius: 10%;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.17),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+.lock:hover {
+  background-color: rgba(216, 214, 124, 0.726);
+}
+.delete {
+  background-color: rgb(29, 144, 144);
+  border: none;
+  width: 80px;
+  color: aliceblue;
+  border-radius: 10%;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.17),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+.delete:hover {
+  background-color: rgba(216, 214, 124, 0.726);
+}
+.reset {
+  background-color: rgb(29, 144, 144);
+  border: none;
+  width: 80px;
+  color: aliceblue;
+  border-radius: 10%;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.17),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+.theme {
+  background-color: rgb(29, 144, 144);
+  border: none;
+  width: 80px;
+  color: aliceblue;
+  border-radius: 10%;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.17),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+.theme:hover {
+  background-color: rgba(216, 214, 124, 0.726);
+}
+.reset:hover {
+  background-color: rgba(216, 214, 124, 0.726);
+}
+.btns {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+  width: 27vw;
+  margin-bottom: 23px;
+}
