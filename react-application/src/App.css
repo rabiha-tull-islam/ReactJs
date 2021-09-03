@@ -39,3 +39,26 @@
     transform: rotate(360deg);
   }
 }
+/* Slider */
+.slider {
+  margin: 15px auto;
+  width: 50%;
+}
+.img-box img {
+  width: 320px;
+  height: 220px;
+}
+.btn {
+  border: none;
+  outline: none;
+  background-color: aqua;
+  padding: 10px 30px;
+  font-size: 20px;
+  color: blue;
+  cursor: pointer;
+  margin: 10px 9px;
+}
+.btn:hover {
+  background-color: black;
+  color: aliceblue;
+}

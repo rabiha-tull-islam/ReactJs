@@ -1,11 +1,18 @@
 // import logo from './logo.svg';
 import './App.css';
-import Card from './Tasks/CardAssingnment-4'
+import logo from '../src/images/book1.jpg'
 
 
 function App() {
   return (
-    <Card/>
+    <div class="slider">
+    <div class="img-box">
+      <img src={logo} alt="" id="slider-img" />
+    </div>
+    <button class="btn prevbtn">Prev</button>
+    <button class="btn nextbtn">Next</button>
+  </div>
+    
   );
 }
 
