@@ -1,17 +1,8 @@
-// import logo from './logo.svg';
-import './App.css';
-import logo from '../src/images/book1.jpg'
-
-
+// import react,{useState} from 'react';
+import Slider from "./Tasks/slider/Slider";
 function App() {
   return (
-    <div class="slider">
-    <div class="img-box">
-      <img src={logo} alt="" id="slider-img" />
-    </div>
-    <button class="btn prevbtn">Prev</button>
-    <button class="btn nextbtn">Next</button>
-  </div>
+   <Slider />
     
   );
 }
