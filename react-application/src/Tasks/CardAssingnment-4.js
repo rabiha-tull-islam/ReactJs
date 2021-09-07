@@ -8,29 +8,24 @@ import items from './data.js';
      return(
          
             <div > 
-            <div className="row p-2   bg-success " >
-                    <div className="col-12">
-                       <h4 className= 'text-light text-center'>Gallery Images</h4> 
-                     </div>
+            <div className="row-1 p-2   bg-success ">
+                                   <h4 className= 'text-light text-center'>Gallery Images</h4> 
+                   
             </div>
          
           
-           <div className='row d-flex justify-content-center' >
+           <div className='row=1 d-flex justify-content-around' >
                   {items.map((item,i)=><div className='col-lg-2 col-md-4 col-sm-5 pt-3 mt-2  mb-5 d-flex justify-content-center' >
                         <div key={i} style={style}>
                            <div className="card" >
-                            
-                           <h5 className="card-title text-center text-info p-2">Id # {item.id} </h5>
+                             <h5 className="card-title text-center text-info p-2">Id # {item.id} </h5>
                               <img src={item.image} className="card-img-top img-fluid " alt="..." style={style1}/>
-                            <div className="card-body">
+                              <div className="card-body">
                             <span class="badge bg-light text-dark text-center">{item.name}</span>
                               {/* <a href="#" className="btn btn-outline-primary "></a> */}
                               <h5 className="card-title text-danger text-center p-1">Age : {item.age} </h5>
                               <button type="button" class="btn btn-primary position-relative opacity-75">
-                              @{detail}
-                               
-                           
-                             </button>
+                              @{detail}  </button>
                               <p className="card-text text-secondary center pt-2 " ><i></i></p>
                             </div>
                           </div>
