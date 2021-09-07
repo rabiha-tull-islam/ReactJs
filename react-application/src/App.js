@@ -1,11 +1,11 @@
 // import logo from './logo.svg';
 import './App.css';
-import Card from './Tasks/CardAssingnment-4'
+import Accordion from './Tasks/Accordion/Accordion'
 
 
 function App() {
   return (
-    <Card/>
+    <Accordion/>
   );
 }
 

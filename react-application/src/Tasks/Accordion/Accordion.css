@@ -1,0 +1,45 @@
+/* Accordion */
+.Box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+.Accordion {
+  width: 600px;
+}
+.Item {
+  background-color: aliceblue;
+  color: blueviolet;
+  margin-bottom: 10px;
+  padding: 10px 12px;
+}
+.title span {
+  color: black;
+  font-weight: bolder;
+  padding-right: 10px;
+}
+.title {
+  color: black;
+  font-style: italic;
+  display: flex;
+  justify-content: space-between;
+}
+.content {
+  color: transparent;
+  max-height: 0;
+  overflow: hidden;
+  text-align: justify;
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+}
+.contentShow {
+  height: auto;
+  max-height: 9999px;
+  text-align: justify;
+  transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+}
+
+.toggle {
+  cursor: pointer;
+}
