@@ -1,19 +1,21 @@
 import React,{useState} from 'react';
 import './Accordion.css';
 import Data from './Data';
-import AccorionItems from './AccordionItems';
+// import AccorionItems from './AccordionItems';
 const Accordion=()=>{
     let i=null
     const [show,setshow]=useState(i)
-      console.log('jhgjh',i);
-    const toggle=(i)=>{
-        console.log('what is in i',i);
-        if(show===i)
+    const [read, setread]=useState(false)
+    //   console.log('jhgjh',i);
+    const toggle=(tog)=>{
+        // console.log('what is in i',i);
+        if(show===tog)
         {
             return setshow(null)
         }
-        setshow(i);
+        setshow(tog);
     }
+    
     return(
          <div className="Box">
             <div className="Accordion">
@@ -23,10 +25,10 @@ const Accordion=()=>{
                           <span>Quesition # {items.id}</span>   
                           {items.Question}
                       </div>
-                      <span className="toggle" onClick={()=>toggle(i)}>{show===i? '+':'-'}</span>
+                      <span className="toggle" onClick={()=>toggle(i)}>{show===i? <i class="fas fa-chevron-down"></i>:<i class="fas fa-chevron-right"></i>}</span>
                   </div>
                    <div className={show===i? 'contentShow':'content'}>
-                     {items.Answer}
+                     {items.Answer.slice(0,199)}<a href="#" class="card-link" onClick={()=>setread(!read)}>{read? 'Read Less': 'Read more'}</a>
                    </div>
     </div>
        )}
