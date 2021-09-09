@@ -5,10 +5,18 @@ import Data from './Data';
 const Accordion=()=>{
     let i=null
     const [show,setshow]=useState(i)
-    const [read, setread]=useState(false)
-    //   console.log('jhgjh',i);
+    const contentData=Data.map((Data,i)=>Data.Answer)
+    // console.log(contentData)
+    const content= new Set(contentData);
+    // console.log(content);
+    const contentArray = [...content];
+    const contentString= contentArray.toString();
+    const contentSlice = contentString.slice(0,199)
+    // console.log(contentSlice)
+    const [readmore, setreadmore]=useState(true)
+    const setContent= readmore? contentSlice:contentString;
     const toggle=(tog)=>{
-        // console.log('what is in i',i);
+       
         if(show===tog)
         {
             return setshow(null)
@@ -25,10 +33,10 @@ const Accordion=()=>{
                           <span>Quesition # {items.id}</span>   
                           {items.Question}
                       </div>
-                      <span className="toggle" onClick={()=>toggle(i)}>{show===i? <i class="fas fa-chevron-down"></i>:<i class="fas fa-chevron-right"></i>}</span>
+                      <span className="toggle" onClick={()=>toggle(i)}>{show===i? <i className="fas fa-chevron-down"></i>:<i className="fas fa-chevron-right"></i>}</span>
                   </div>
-                   <div className={show===i? 'contentShow':'content'}>
-                     {items.Answer.slice(0,199)}<a href="#" class="card-link" onClick={()=>setread(!read)}>{read? 'Read Less': 'Read more'}</a>
+                   <div className={show===i? 'contentShow ':'content '}>
+                    {setContent}.....<a href="#" className={show===i ? 'ashow':'ahidden'}  onClick={()=>setreadmore(!readmore)}>{readmore? 'Read more': 'Read less'}</a>
                    </div>
     </div>
        )}
