@@ -1,11 +1,11 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-import Card from './Tasks/CardAssingnment-4'
+import { Increment  } from './IncrementCalClassbased/Increment';
 
 
 function App() {
   return (
-    <Card/>
+    <Increment />
   );
 }
 
