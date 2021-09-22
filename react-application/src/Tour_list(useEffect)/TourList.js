@@ -1,16 +1,14 @@
 import React, { useState } from "react";
 import Data from "./Data";
-const TourList = ({ item, i, deletee }) => {
-  const [readMore, setreadMore] = useState(true);
-  const contentData = Data.map((items, i) => items.content);
-  const contentOnce = new Set(contentData);
-  //   console.log(contentOnce);
-  const arrayContent = [...contentOnce];
-  console.log(arrayContent);
-  const contentString = arrayContent.toString();
-  const contentSlice = contentString.slice(0, 150);
-  //   console.log(contentSlice);
-  const setContent = readMore ? contentSlice : contentString;
+const TourList = ({
+  item,
+  i,
+  deletee,
+  setContent,
+  setreadMore,
+  readMore,
+  index,
+}) => {
   return (
     <div key={i} className="d-flex justify-content-center m-4 p-4">
       <div className="card" style={{ width: "27rem" }}>
@@ -27,9 +25,9 @@ const TourList = ({ item, i, deletee }) => {
               {readMore ? "Read more" : "Read Less"}
             </button>
           </p>
-          <a href="#" className="btn btn-primary" onClick={() => deletee(i)}>
-            Not interested
-          </a>
+          <button className="btn btn-primary" onClick={() => deletee(index)}>
+            Not interested!!
+          </button>
         </div>
       </div>
     </div>
