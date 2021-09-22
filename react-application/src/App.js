@@ -1,10 +1,9 @@
-import './App.css';
-
-
+import "./App.css";
+import Tour from "./Tour_list(useEffect)/Tour";
 function App() {
   return (
     <div>
-      Hello World
+      <Tour />
     </div>
   );
 }
