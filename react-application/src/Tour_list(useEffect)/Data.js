@@ -12,7 +12,7 @@ const Data = [
   {
     Image: p2,
     content:
-      " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, atque repudiandae? Eligendi at quo molestias alias repellat, numquam provident omnis iste nulla architecto ut veniam reprehenderit dignissimos, quaerat pariatur suscipit! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, atque repudiandae? Eligendi at quo molestias alias repellat, numquam provident omnis iste nulla architecto ut veniam reprehenderit dignissimos, quaerat pariatur suscipit!",
+      " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, atque repudiandae? Eligendi at quo molestias alias repellat, numquam provident omnis iste nulla architecto ut veniam reprehenderit dignissimos, quaerat pariatur suscipit! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam,",
   },
   {
     Image: p3,
@@ -22,12 +22,12 @@ const Data = [
   {
     Image: p4,
     content:
-      " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, atque repudiandae? Eligendi at quo molestias alias repellat, numquam provident omnis iste nulla architecto ut veniam reprehenderit dignissimos, quaerat pariatur suscipit! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, atque repudiandae? Eligendi at quo molestias alias repellat, numquam provident omnis iste nulla architecto ut veniam reprehenderit dignissimos, quaerat pariatur suscipit!",
+      " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, atque repudiandae? Eligendi at quo molestias alias repellat, numquam provident omnis iste nulla architecto ut veniam reprehenderit dignissimos, quaerat pariatur suscipit! Lorem ipsum dolor sit amet consectetur, adipisicing elit. ",
   },
   {
     Image: p5,
     content:
-      " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, atque repudiandae? Eligendi at quo molestias alias repellat, numquam provident omnis iste nulla architecto ut veniam reprehenderit dignissimos, quaerat pariatur suscipit!  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, atque repudiandae? Eligendi at quo molestias alias repellat, numquam provident omnis iste nulla architecto ut veniam reprehenderit dignissimos, quaerat pariatur suscipit!",
+      " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, atque repudiandae? Eligendi at quo molestias alias repellat, numquam provident omnis iste nulla architecto ut veniam reprehenderit dignissimos, quaerat pariatur suscipit!  Lorem ipsum dolor sit amet consectetur, adipisicing elit. ",
   },
 ];
 export default Data;
